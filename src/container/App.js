@@ -38,7 +38,7 @@ class App extends Component {
            return  robot.name.toLowerCase().includes(searchbox.toLowerCase());
         })
 
-       return !robots.length ? <h1>Loading</h1> : (
+       return  (
             <div className="tc">
                 <h1 className="f1">RoboFriends </h1>
                 <SearchBox searchChange={this.onSearchChange} />
@@ -51,6 +51,7 @@ class App extends Component {
            
     }
 }
+// !robots.length ? <h1>Loading</h1> :
 
 
 export default App;
